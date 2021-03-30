@@ -5,9 +5,11 @@
     padding: 0;
     font-size: 12px;
     font-family: 'Spartan', sans-serif;
+
 }
 html{
-    margin: 100px;
+    
+    /*margin: 100px;*/
 }
 .flex {
     display:flex;
@@ -15,11 +17,20 @@ html{
 }
 body{
     justify-content: space-between;
-    margin: auto;
+    margin: 150px auto;
+    width: 950px;
+    height: 400px;
+    
+    
 }
 header{
     justify-content: space-between;
-    height:400px;
+    height: 350px;
+    background-image: url("./images/bg-pattern-top-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 350px;
+    
+    
 }
 header h1{
     font-size: 40px;
@@ -27,8 +38,11 @@ header h1{
 }
 header section{
     width: 50%;
-    
-
+}
+header section h3{
+    margin-top: 10px;
+    color: hsl(303, 10%, 53%);
+    font-weight: 500;
 }
 .rating{
     width: 50%;
@@ -41,12 +55,12 @@ header section{
     background-color: hsl(300, 24%, 96%);
     color: hsl(300, 43%, 22%);
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 10px 20px ;
     width: 370px;
     box-sizing: border-box;
     height: 50px;
-    margin-top: 30px;
+    margin-top: 20px;
     
 
 }
@@ -56,14 +70,21 @@ header section{
 }
 .starbox h3{
     padding-left: 30px;
+    color:hsl(300, 43%, 22%);
+    font-weight: 700;
 }
 .title{
     flex-direction: column;
     justify-content: center;
-    width: 30%
+    width: 40%;
 }
 main{
     justify-content: space-between;
+    height: 250px;
+    background-image: url("./images/bg-pattern-bottom-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 500px;
+    
 }
 .feedback{
     background-color: hsl(300, 43%, 22%);
@@ -77,20 +98,29 @@ main{
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+    
+}
+.firstElement{
+    align-self: flex-start;
+}
+.lastElement{
+    align-self: flex-end;
 }
 img{
     border-radius: 50%;
     width: 40px;
 }
 .author{
-    font-weight: lighter;
+    font-weight: 400;
 }
 
 .author h5 {
     padding-left:20px;
+    font-weight: 400;
 }
 
 .author h5 p{
     color: hsl(333, 80%, 67%);
+    font-weight: 400;
 
 }
