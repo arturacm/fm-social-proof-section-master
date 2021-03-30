@@ -3,7 +3,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-size: 15px;
+    font-size: 12px;
     font-family: 'Spartan', sans-serif;
 }
 html{
@@ -15,11 +15,11 @@ html{
 }
 body{
     justify-content: space-between;
-    
     margin: auto;
 }
 header{
     justify-content: space-between;
+    height:400px;
 }
 header h1{
     font-size: 40px;
@@ -27,13 +27,13 @@ header h1{
 }
 header section{
     width: 50%;
-    height: 200px;
+    
 
 }
 .rating{
     width: 50%;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     
 }
@@ -43,13 +43,24 @@ header section{
     font-weight: bold;
     border-radius: 5px;
     padding: 10px 20px ;
-    width: 400px;
+    width: 370px;
     box-sizing: border-box;
+    height: 50px;
+    margin-top: 30px;
+    
+
+}
+
+.starbox img{
+    width: 15px;
+}
+.starbox h3{
+    padding-left: 30px;
 }
 .title{
     flex-direction: column;
     justify-content: center;
-    /*max-width: ;*/
+    width: 30%
 }
 main{
     justify-content: space-between;
@@ -57,9 +68,29 @@ main{
 .feedback{
     background-color: hsl(300, 43%, 22%);
     border-radius: 5px;
-    max-width: 30%;
+    width: 300px;
+    height: 200px;
     color: white;
+    box-sizing: border-box;
+    padding: 25px 35px;
+    font-size: 12px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 img{
     border-radius: 50%;
+    width: 40px;
+}
+.author{
+    font-weight: lighter;
+}
+
+.author h5 {
+    padding-left:20px;
+}
+
+.author h5 p{
+    color: hsl(333, 80%, 67%);
+
 }
