@@ -7,10 +7,6 @@
     font-family: 'Spartan', sans-serif;
 
 }
-html{
-    
-    /*margin: 100px;*/
-}
 .flex {
     display:flex;
     align-items: center;
@@ -61,8 +57,6 @@ header section h3{
     box-sizing: border-box;
     height: 50px;
     margin-top: 20px;
-    
-
 }
 
 .starbox img{
@@ -123,4 +117,65 @@ img{
     color: hsl(333, 80%, 67%);
     font-weight: 400;
 
+}
+
+@media (max-width: 400px){
+    body{
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: auto;
+    }
+    .title{
+        
+        width: 100%; 
+        margin: 20px;  
+    }
+    .title h1{
+        margin: 50px 50px 20px 50px;
+        font-size: 25px;
+    }
+    .title h3{
+        margin: 10px 40px;
+    }
+    .rating{
+        width: 100%;
+        
+    }
+
+    header{
+        
+        flex-direction: column;
+        width: 100%;
+        background-image: url("./images/bg-pattern-top-mobile.svg");
+        background-repeat: no-repeat;
+    }
+    header section{
+        flex-direction: column;
+        width: 100%;
+        
+    }
+    .starbox{
+        width: 100%;
+        flex-direction: column;
+        height: 75px;
+        justify-content: space-evenly;
+    }
+    .starbox img{
+        margin-left: 5px;
+    }
+    main{
+        margin-top: 220px;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        background-image: url("./images/bg-pattern-bottom-mobile.svg");
+        background-repeat: no-repeat;
+    }
+    .feedback{
+        margin-bottom: 15px;
+        width:100%;
+    }
 }
